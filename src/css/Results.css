@@ -1,0 +1,31 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.results-text {
+  font-size: 1.5rem;
+}
+
+.results-bold {
+  font-weight: 600;
+}
+
+.reset-btn {
+  align-self: center;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 4px;
+  background-color:#fbfdff;
+  padding: 0.625em 2em;
+  box-shadow: 0 2px 5px #5cb6ff;
+  font-family: Inter, serif;
+  font-weight: 600;
+}
+
+.reset-btn:hover {
+  background-color: #4cda63;
+  color: #fbfdff;
+  box-shadow: 0 2px 7px #45df92;
+}

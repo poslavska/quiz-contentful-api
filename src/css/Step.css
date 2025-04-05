@@ -1,0 +1,133 @@
+.step-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  box-shadow: 1px 1px 8px #67cf90;
+  max-width: 620px;
+  width: 100%;
+  padding: 1.125em 1em 1.5em 1em;
+}
+
+.separator-span {
+  height: 1.25px;
+  background-color: #99bfe9;
+  width: 100%;
+}
+
+.progress-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.step-title {
+  margin-top: 1em;
+  margin-bottom: 1.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.questions-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.95em;
+}
+
+.answers-container {
+  display: flex;
+  gap: 0.5em;
+}
+
+.answer-textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.answer-label {
+  font-size: 1.125rem;
+}
+
+.open-answer-input {
+  border: 1px solid #99bfe9;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5em 0.375em;
+  max-width: 400px;
+}
+
+.open-answer-input:focus, .open-answer-input:active {
+  outline: 2px solid #139846;
+  border: none;
+  padding: calc(0.5em + 0.8px) 0.375em;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.navigation-btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.75em 0;
+  font-family: Inter, serif;
+}
+
+.previous-btn, .next-btn {
+  font-family: Inter, serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.previous-btn {
+  background-color: #E2E8F0;
+  color: #1A202C;
+  padding: 0.5em 0.625em;
+  transition: background-color 0.2s ease;
+}
+
+.previous-btn:hover {
+  background-color: #CBD5E0;
+}
+
+.next-btn {
+  background-color: #2e86cf;
+  color: white;
+  padding: 0.5em 1.125em;
+  transition: background-color 0.2s ease;
+}
+
+.next-btn:hover {
+  background-color: #2563EB;
+}
+
+.submit-btn {
+  align-self: center;
+  background-color: #10B981;
+  color: white;
+  border: none;
+  font-family: Inter, serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.625em 2.5em;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin-top: 0.75em;
+}
+
+.submit-btn:hover {
+  background-color: #059669;
+}
