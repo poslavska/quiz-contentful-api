@@ -97,7 +97,7 @@ export default function StepComponent({ steps, setQuizStarted}: StepsProps) {
                     className='open-answer-input'
                     onChange={handleChange}
                     name={question.text}
-                    placeholder="1933"
+                    placeholder={currentStepNumber === 0 ? "Ben" : "1933"}
                     value={userAnswers[question.text] || ""} />
                   </label>
                 )}
