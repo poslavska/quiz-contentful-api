@@ -113,12 +113,12 @@ export default function StepComponent({ steps, setQuizStarted}: StepsProps) {
             onClick={goToPreviousStep}>
               ← Previous
             </button>
-            <button
+            {(currentStepNumber + 1 !== steps.length) && <button
             type="button"
             className='next-btn'
             disabled={currentStep.questions.some(q => !userAnswers[q.text]?.trim()) || currentStepNumber + 1 === steps.length}
             onClick={goToNextStep}
-            >Next →</button>
+            >Next →</button>}
           </div>
           <button 
           type="submit"

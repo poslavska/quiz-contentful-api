@@ -13,7 +13,7 @@ export default function ResultsComponent({ userName, setQuizStarted, correctCoun
     <section className='results-container'>
       {correctCount === totalQuestions && <Confetti />}
       <p className='results-text'>
-        {correctCount === totalQuestions ? 'Congrats,' : null} {userName}, you got <span className='results-bold'>{correctCount}</span> correct answers out of <span className='results-bold'>{totalQuestions}</span> questions!
+        {correctCount === totalQuestions ? 'Congrats,' : null} {userName}, you got <span className='results-bold'>{correctCount}</span> correct answer{correctCount > 1 ? 's' : ''} out of <span className='results-bold'>{totalQuestions}</span> questions!
       </p>
       <button className='reset-btn'
         onClick={() => setQuizStarted(prev => !prev)}>New game</button>
